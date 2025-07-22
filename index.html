@@ -1,22 +1,161 @@
 <!DOCTYPE html>
+
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Slider de imágenes Responsive</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide"><img src="straykids2.jpg" alt="Imagen 1"></div>
-                <div class="slide"><img src="Hanji.jpg" alt="Imagen 2"></div>
-                <div class="slide"><img src="Seungmin.jpg" alt="Imagen 3"></div>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-
+
+scale=1.0">
+
+<title>MENU RESPONSIVE</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<hr>
+<body>
+<section>
+
+<header class="header">
+
+<div class="logo">MENU</div>
+
+<input type="checkbox" id="toggle">
+
+<label for="toggle"> <img class="MENU" src="imagenes/"
+
+alt="MENU"> </label>
+
+<nav class="navigation">
+
+<ul>
+
+  <li><a href="#">Inicio</a></li>
+
+  <li><a href="#">Flores y plantas</a></li>
+
+  <li><a href="#">tipos</a>
+
+    <ul>
+
+      <li><a href="#">Pagina 1</a></li>
+
+      <li><a href="#">Pagina 2</a></li>
+
+      <li><a href="#">Pagina 3</a></li>
+
+         </li>
+
+     </ul>
+
+  </li>
+
+  <li><a href="#">Contactanos</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+</section>
+<hr>
+<section>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="imagenes/imagen1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="imagenes/imagen2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="imagenes/imagen3.jpg" alt="Imagen 3"></div>
             </div>
-            <button class="prev-btn">&#10094;</button>
-            <button class="next-btn">&#10095;</button>
-            <div class="dots-container"></div> <!-- Aquí cerramos correctamente el contenedor de los puntos -->
-        </div>
-        <script src="script.js"></script>
-    </body>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+        <div class="dots-container">
+            </div>
+    </div>
+</section>
+<hr>
+<section>
+    <h1>Galería de Imagnes (plantas y flores)</h1>
+    <p class="galeria">
+    <img src="img1.jpg" alt="Imagen 1" class="miniatura" />
+    <img src="img2.jpg" alt="Imagen 2" class="miniatura" />
+    <img src="img3.jpg" alt="Imagen 3" class="miniatura" />
+    <img src="img4.jpg" alt="Imagen 4" class="miniatura" />
+    <img src="img5.jpg" alt="Imagen 5" class="miniatura" />
+    <img src="img6.jpg" alt="Imagen 6" class="miniatura" />
+  </section>
+
+  <!-- Contenedor para imagen ampliada -->
+  <div id="visor" class="visor oculto">
+    <span id="cerrar">&times;</span>
+    <img id="imagenGrande" src="" alt="Imagen ampliada" />
+  </div>
+</section>
+<hr>
+<section>
+    <section class="noticias-section">
+        <h2>Plantas venenosas</h2>
+        <article class="noticia">
+            <img src="ima1.jpg" alt="Título de la Noticia 1">
+                <h3>Titular de la Noticia 1</h3>
+                <p class="resumen">Breve resumen de la Noticia 1. Aquí se destacan los puntos más importantes de la notticia que se presenta para informar de mejor manera.</p>
+                <a href="https://hidroponia.mx/plantas-venenosas/">Leer más</a>
+        </article>
+        <article class="noticia">
+            <img src="ima2.jpg" alt="Título de la Noticia 2">
+                <h3>Titular de la Noticia 2</h3>
+                <p class="resumen">Breve resumen de la Noticia 2. Aquí se destacan los puntos más importantes de la noticia que se presenta para informar de mejor manera.</p>
+                <a href="https://hidroponia.mx/plantas-venenosas/">Leer más</a>
+        </article>
+        <article class="noticia">
+            <img src="ima3.jpg" alt="Título de la Noticia 3">
+                <h3>Titular de la Noticia 3</h3>
+                <p class="resumen">Breve resumen de la Noticia 3. Aquí se destacan los puntos más importantes de la noticia que se presenta para informar de mejor manera.</p>
+                <a href="https://hidroponia.mx/plantas-venenosas/">Leer más</a>
+        </article>
+    </section>
+    <hr>
+    <center>
+      <section>
+        <main>
+            <center><h1>¡Contáctanos!</h1></center>
+            <p>Por favor, completa el siguiente formulario para ponerte en contacto con nosotros.</p>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required autocomplete="name">
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <section>
+                <div class="social-links">
+                    <a href="https://wa.me/936743415" class="social-icon whatsapp" target="_blank">
+                        <img src="Whatsapp.jpg" alt="Whatsapp">
+                    </a>
+                    <a href="https://www.facebook.com/jadmiraflores/?locale=es_LA" class="social-icon facebook" target="_blank">
+                        <img src="facebook.jpg" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" class="social-icon instagram" target="_blank">
+                        <img src="instagram.jpg" alt="instagram">
+                    </a>
+                    <a href="https://x.com/?lang=ES" class="social-icon twitter" target="_blank">
+                        <img src="twitter.jpg" alt="twitter">
+                    </a>
+                </div>
+            </section>
+        </main>
+    </section>
+</section>
+<script src="java.js"></script>
+</body>
 </html>
